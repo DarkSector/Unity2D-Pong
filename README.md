@@ -8,3 +8,7 @@ Here are the differences between what I did and what the guide showed.
 OnTrigger ... 
  * In the same location I used Transform.name 
  * I used Invoke instead of hi() as shown here https://github.com/DarkSector/Unity2D-Pong/blob/master/Assets/_Scripts/BallControl.cs#L8
+
+##Credits
+ * Background Audio by [Chris Zabriskie](http://freemusicarchive.org/music/Chris_Zabriskie/Direct_to_Video_1014/07_-_Its_Always_Too_Late_to_Start_Over)
+ * Background Image from FTL
