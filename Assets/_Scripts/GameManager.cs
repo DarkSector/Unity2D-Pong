@@ -5,9 +5,8 @@ public class GameManager : MonoBehaviour {
 
 	public static int PlayerScore1 = 0;
 	public static int PlayerScore2 = 0;
-
 	public GUISkin layout;
-
+	public int threshold;
 	Transform theBall;
 
 	void Start() {
@@ -17,18 +16,14 @@ public class GameManager : MonoBehaviour {
 
 	public static void Score(string WallID){
 		if (WallID == "rightWall"){
-
 			PlayerScore1++;
-
 		} else {
 			PlayerScore2++;
-
 		}
-
 	}
 
 	void OnGUI(){
-		int final_score =  3;
+		int final_score =  threshold;
 		GUI.skin = layout;
 		GUI.Label (new Rect(Screen.width /2 -150 -12, 20, 100, 100), "" + PlayerScore1);
 		GUI.Label (new Rect(Screen.width /2 +150 +12, 20, 100, 100), "" + PlayerScore2);
